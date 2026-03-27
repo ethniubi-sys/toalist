@@ -1,0 +1,7 @@
+{
+  "name": "LooFinder - Luxury Restroom Finder",
+  "description": "A premium application to find and navigate to high-end restrooms with real-time availability and amenity details.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
