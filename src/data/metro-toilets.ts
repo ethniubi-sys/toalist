@@ -1,6 +1,6 @@
 /**
  * 深圳地铁各线路厕所分布数据
- * 数据来源：深圳地铁官方厕所分布表（1/2/3/4/8号线）
+ * 数据来源：深圳地铁官方厕所分布表（1/2/3/4/5/6/8号线）
  */
 
 export interface ToiletEntry {
@@ -140,6 +140,11 @@ const LINE_2_8: StationToilet[] = [
   { station: "盐田港西", line: "8号线", toilets: [t("闸内", "站厅中部")] },
   { station: "深外高中", line: "8号线", toilets: [t("闸内", "站厅中部")] },
   { station: "盐田路", line: "8号线", toilets: [t("闸内", "站厅中部")] },
+  { station: "鸿安围", line: "8号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "盐田墟", line: "8号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "大梅沙", line: "8号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "小梅沙", line: "8号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "溪涌", line: "8号线", toilets: [t("闸外", "站厅（近A/B出入口）")] },
 ];
 
 // ─── 3号线 ──────────────────────────────────────────────────────────────────
@@ -175,6 +180,16 @@ const LINE_3: StationToilet[] = [
   { station: "龙城广场", line: "3号线", toilets: [t("闸外", "站厅（近C出入口）")] },
   { station: "南联", line: "3号线", toilets: [t("闸外", "站厅（近B1/B2出入口之间）")] },
   { station: "双龙", line: "3号线", toilets: [t("闸外", "站厅（近A出入口）")] },
+  { station: "梨园", line: "3号线", toilets: [t("闸外", "站厅（近B/C出入口之间）")] },
+  { station: "新生", line: "3号线", toilets: [
+    t("闸内", "站台（往坪地六联方向头端）；站台（往福保方向尾端）"),
+    t("闸外", "站厅（近C出入口）"),
+  ]},
+  { station: "坪西", line: "3号线", toilets: [t("闸外", "站厅（近D出入口）")] },
+  { station: "低碳城", line: "3号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "白石塘", line: "3号线", toilets: [t("闸外", "站厅（近D出入口）")] },
+  { station: "富坪", line: "3号线", toilets: [t("闸外", "站厅（近D出入口）")] },
+  { station: "坪地六联", line: "3号线", toilets: [t("闸外", "站厅（近D出入口）")] },
 ];
 
 // ─── 4号线 ──────────────────────────────────────────────────────────────────
@@ -188,6 +203,9 @@ const LINE_4: StationToilet[] = [
   { station: "莲花北", line: "4号线", toilets: [t("闸外", "站厅（近A出入口）")] },
   { station: "上梅林", line: "4号线", toilets: [t("闸内", "9号线站台（往文锦方向头端）")] },
   { station: "民乐", line: "4号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "白石龙", line: "4号线", toilets: [t("闸内", "站厅中部")] },
+  { station: "深圳北", line: "4号线", toilets: [t("闸内", "站厅中部")] },
+  { station: "红山", line: "4号线", toilets: [t("闸内", "站厅中部")] },
   { station: "上塘", line: "4号线", toilets: [t("闸外", "站厅（近A1/A2出入口之间）")] },
   { station: "龙胜", line: "4号线", toilets: [t("闸外", "站厅（近A1/A2出入口之间）")] },
   { station: "龙华", line: "4号线", toilets: [t("闸外", "站厅（近A出入口）")] },
@@ -202,6 +220,110 @@ const LINE_4: StationToilet[] = [
   { station: "牛湖", line: "4号线", toilets: [t("闸内", "站厅中部")] },
 ];
 
+// ─── 5号线 ──────────────────────────────────────────────────────────────────
+
+const LINE_5: StationToilet[] = [
+  { station: "赤湾", line: "5号线", toilets: [t("闸外", "5号线站厅（近E出入口）；2号线站厅（近C出入口）")] },
+  { station: "荔湾", line: "5号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "铁路公园", line: "5号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "妈湾", line: "5号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "前湾公园", line: "5号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "前湾", line: "5号线", toilets: [t("闸内", "5号线站台（往赤湾方向头端）"), t("闸外", "站厅（近B出入口）")] },
+  { station: "桂湾", line: "5号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "前海湾", line: "5号线", toilets: [t("闸外", "1号线站厅（近B出入口）")] },
+  { station: "临海", line: "5号线", toilets: [t("闸外", "站厅（近B出入口）", "暂未启用")] },
+  { station: "宝华", line: "5号线", toilets: [t("闸外", "站厅（近D出入口）")] },
+  { station: "宝安中心", line: "5号线", toilets: [t("闸外", "站厅（近A出入口）")] },
+  { station: "翻身", line: "5号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "灵芝", line: "5号线", toilets: [
+    t("闸内", "12号线站台（往松岗方向头端）；12号线站台（往左炮台东方向尾端）"),
+    t("闸外", "站厅（近B出入口）"),
+  ]},
+  { station: "洪浪北", line: "5号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "兴东", line: "5号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "留仙洞", line: "5号线", toilets: [
+    t("闸内", "13号线站台（往李松蓢方向尾端）"),
+    t("闸外", "5号线站厅（近C出入口）；13号线站厅（近F出入口）"),
+  ]},
+  { station: "西丽", line: "5号线", toilets: [
+    t("闸内", "7号线站台（往深大丽湖方向头端）；7号线站台（往太安方向尾端）"),
+    t("闸外", "5号线站厅（近F出入口）"),
+  ]},
+  { station: "大学城", line: "5号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "塘朗", line: "5号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "长岭陂", line: "5号线", toilets: [t("闸外", "站厅（近A出入口）")] },
+  { station: "深圳北", line: "5号线", toilets: [t("闸内", "4号线站厅中部")] },
+  { station: "民治", line: "5号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "五和", line: "5号线", toilets: [
+    t("闸内", "10号线站台（往福田口岸方向头端）"),
+    t("闸外", "站厅（近A出入口）"),
+  ]},
+  { station: "坂田", line: "5号线", toilets: [t("闸外", "站厅（近A出入口）")] },
+  { station: "杨美", line: "5号线", toilets: [t("闸外", "站厅（近D出入口）")] },
+  { station: "上水径", line: "5号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "下水径", line: "5号线", toilets: [t("闸外", "站厅（近A出入口）")] },
+  { station: "长龙", line: "5号线", toilets: [t("闸外", "站厅（近A出入口）")] },
+  { station: "布吉", line: "5号线", toilets: [
+    t("闸内", "14号线站台（往沙田方向头端）"),
+    t("闸外", "14号线站厅（近D出入口）"),
+  ]},
+  { station: "百鸽笼", line: "5号线", toilets: [t("闸外", "站厅（近D出入口）")] },
+  { station: "布心", line: "5号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "太安", line: "5号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "怡景", line: "5号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "黄贝岭", line: "5号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "湖贝", line: "5号线", toilets: [t("闸外", "站厅（近G出入口）")] },
+  { station: "东门", line: "5号线", toilets: [t("闸外", "站厅（下沉广场）")] },
+  { station: "大剧院", line: "5号线", toilets: [
+    t("闸内", "5号线站台（往赤湾方向尾端）"),
+    t("闸外", "5号线站厅（近G出入口）；2号线站厅（近F出入口）；1号线站厅（近B出入口）"),
+  ]},
+];
+
+// ─── 6号线 ──────────────────────────────────────────────────────────────────
+
+const LINE_6: StationToilet[] = [
+  { station: "科学馆", line: "6号线", toilets: [
+    t("闸内", "6号线站台（往科学馆方向头端）"),
+    t("闸外", "6号线站厅（近E出入口）；1号线站厅（A出入口通道内）"),
+  ]},
+  { station: "通新岭", line: "6号线", toilets: [
+    t("闸内", "6号线站台（往松岗方向头端）"),
+    t("闸外", "3号线站厅（近C出入口）"),
+  ]},
+  { station: "体育中心", line: "6号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "八卦岭", line: "6号线", toilets: [
+    t("闸内", "6号线站台（往科学馆方向尾端）；7号线站台（往深大丽湖方向尾端）"),
+    t("闸外", "6号线站厅（近E出入口）；7号线站厅（近B出入口）"),
+  ]},
+  { station: "银湖", line: "6号线", toilets: [t("闸内", "6号线站台（往科学馆方向尾端）"), t("闸外", "站厅（近B出入口）")] },
+  { station: "翰岭", line: "6号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "梅林关", line: "6号线", toilets: [t("闸外", "站厅（近A出入口）")] },
+  { station: "深圳北", line: "6号线", toilets: [t("闸内", "4号线站厅中部")] },
+  { station: "红山", line: "6号线", toilets: [t("闸内", "6号线站厅中部；4号线站厅中部")] },
+  { station: "上芬", line: "6号线", toilets: [t("闸外", "站厅（A/D出入口之间）")] },
+  { station: "元芬", line: "6号线", toilets: [t("闸外", "站厅（近D出入口）")] },
+  { station: "阳台山东", line: "6号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "官田", line: "6号线", toilets: [t("闸外", "站厅（近D出入口）")] },
+  { station: "上屋", line: "6号线", toilets: [t("闸内", "13号线站台（往李松蓢方向尾端）"), t("闸外", "6号线站厅（近D出入口）；13号线站厅（近E出入口）")] },
+  { station: "长圳", line: "6号线", toilets: [t("闸外", "站厅（近D出入口垂梯旁）")] },
+  { station: "凤凰城", line: "6号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "光明大街", line: "6号线", toilets: [t("闸外", "站厅（A/D出入口之间）")] },
+  { station: "光明", line: "6号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "科学公园", line: "6号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "楼村", line: "6号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "红花山", line: "6号线", toilets: [t("闸外", "站厅（近D出入口）")] },
+  { station: "公明广场", line: "6号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "合水口", line: "6号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "薯田埔", line: "6号线", toilets: [t("闸外", "站厅（近C出入口）")] },
+  { station: "松岗公园", line: "6号线", toilets: [t("闸外", "站厅（近B出入口）")] },
+  { station: "溪头", line: "6号线", toilets: [t("闸外", "站厅（近D出入口）")] },
+  { station: "松岗", line: "6号线", toilets: [
+    t("闸内", "6号线站台（往松岗方向中部）；6号线站台（往科学馆方向中部）；11号线站台（往碧头方向头端）"),
+    t("闸外", "6/11号线站厅（近F出入口）"),
+  ]},
+];
+
 // ─── 全部数据导出 ───────────────────────────────────────────────────────────
 
 export const ALL_METRO_TOILETS: StationToilet[] = [
@@ -209,6 +331,8 @@ export const ALL_METRO_TOILETS: StationToilet[] = [
   ...LINE_2_8,
   ...LINE_3,
   ...LINE_4,
+  ...LINE_5,
+  ...LINE_6,
 ];
 
 /** 按线路分组获取 */
